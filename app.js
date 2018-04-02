@@ -4,12 +4,12 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var config = require('./config/config.json');
 var device = require('express-device')
-var AuthorizationFailure = require("./error/ValidationError");
-var ms = require('ms');
-var jwt = require('jsonwebtoken');
 Promise = require('bluebird'),
 request = Promise.promisify(require('request'));
 var app = express();
+var AuthorizationFailure = require("./error/ValidationError");
+var ms = require('ms');
+var jwt = require('jsonwebtoken');
 
 var MapperField = require("./mapper")
 
