@@ -13,6 +13,7 @@ require.config({
         'Mapper': "./lib/external/FrameGenerator/mapper/index",
         'HtmlText': "./lib/external/FrameGenerator/mapper/map/HtmlText",
         'HtmlSelect': "./lib/external/FrameGenerator/mapper/map/HtmlSelect",
+        'HtmlLabel': "./lib/external/FrameGenerator/mapper/map/HtmlLabel",
 
         /* , 'toaster'       : './lib/external/angular/toaster'*/
         /*, 'toasterService': './lib/angular/services/toasterService'*/
@@ -78,7 +79,7 @@ requirejs([
         "onkeypress": "onKeyPress(this);",
         "onclick": "onClick(this);",
         "onblure": "onBlure(this);",
-        "listVal": "0",
+        "listVal": "||test|VALUE",
         "help": "N",
         "helpLink": "helpload",
         "xml": "Y",
