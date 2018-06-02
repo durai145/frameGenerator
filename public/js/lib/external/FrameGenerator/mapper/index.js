@@ -1,9 +1,13 @@
-define(function (require, exports, module) {
-    "use strict";
+define([
+    './HtmlSelect'
+    ,'./HtmlLabel'
+    ,'./HtmlText'
+    , 'exports'
+], function (HtmlSelect, HtmlLabel, HtmlText, exports) {
+    'use strict';
     exports.mapper = {
-        "LIST": require("HtmlSelect"),
-        "LABEL": require("HtmlLabel"),
-        "TEXT": require("HtmlText")
+        "LIST": HtmlSelect,
+        "LABEL": HtmlLabel,
+        "TEXT": HtmlText
     };
-
 });

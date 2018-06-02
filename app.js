@@ -32,10 +32,6 @@ function createField(frameObj) {
 var frameObj = {
     "HtmlType": "LIST"
 }
-
-//createField(frameObj);
-
-
 app.use(express.static(__dirname + '/public'));
 var server = app.listen(config.port, function () {
 	console.log('Listening on port %d', server.address().port);

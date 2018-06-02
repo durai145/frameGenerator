@@ -9,11 +9,14 @@ require.config({
     paths: {
         'jquery': './lib/jquery',
         'require': './lib/require',
-        'FrameGenerator': './lib/external/FrameGenerator/index',
-        'Mapper': "./lib/external/FrameGenerator/mapper/index",
-        'HtmlText': "./lib/external/FrameGenerator/mapper/map/HtmlText",
-        'HtmlSelect': "./lib/external/FrameGenerator/mapper/map/HtmlSelect",
-        'HtmlLabel': "./lib/external/FrameGenerator/mapper/map/HtmlLabel",
+        'controllers'       : './lib/angular/controllers/',
+        'framegenerator'    : './lib/external/framegenerator/',
+        'mapper': "./lib/external/framegenerator/mapper/",
+        
+        //TODO: Need to import dynamic or from the
+        'HtmlText': "./lib/external/framegenerator/mapper/map/HtmlText",
+        'HtmlSelect': "./lib/external/framegenerator/mapper/map/HtmlSelect",
+        'HtmlLabel': "./lib/external/framegenerator/mapper/map/HtmlLabel",
 
         /* , 'toaster'       : './lib/external/angular/toaster'*/
         /*, 'toasterService': './lib/angular/services/toasterService'*/
@@ -37,8 +40,9 @@ require.config({
 requirejs([
     'require',
     'jquery',
-    "FrameGenerator"
-], function (require, angular, FrameGenerator) {
+    "framegenerator",
+    "controllers"
+], function (require, angular, framegenerator, controllers) {
     'use strict';
 
     /*
@@ -53,6 +57,8 @@ requirejs([
     });
     */
     //});
+
+    //TODO:  Object should be create from Frame Object
     var frameObj = {
         "group": "USS",
         "name": "registerUserRequest",

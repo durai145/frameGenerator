@@ -1,3 +1,12 @@
+define(["exports", "Mapper"], function (exports, Mapper) {
+    console.log("Frame Generator index.js")
+    exports.CreateField = function (frameObj) {
+        console.log(Mapper.mapper[frameObj.HtmlType]);
+        return Mapper.mapper[frameObj.HtmlType].createField(frameObj);
+    }
+
+});
+/*
 define(function (require, exports, module) {
     var FieldMapper = require("Mapper");
     exports.CreateField = function (frameObj) {
@@ -70,7 +79,7 @@ define(function (require, exports, module) {
                     if (fieldObj.mndf == 'Y') {
                         this.tableBodyLabel.appendChild(this.tableBodyMndf);
                     }
-                    */
+                    *//*
 
                 }
                 if (fieldObj.htmlType == 'LIST') {
@@ -197,7 +206,7 @@ define(function (require, exports, module) {
         {
                 alert("CFCException :" +e);
         }
-      */
+      *//*
         this.clearfix = document.createElement("div");
         this.clearfix.className = "clearfix visible-xs-block";
         this.clearfix.innerHTML = "";
@@ -362,7 +371,7 @@ define(function (require, exports, module) {
             
                     this.tableBodyElmntScript.appendChild( document.createTextNode(this.jsfunc) );
             //	document.header.
-            */
+            *//*
         }
 
         this.tableBodyElmntScript.text = jsfunc;
@@ -385,3 +394,5 @@ define(function (require, exports, module) {
     }
     exports.USS = USS;
 });
+
+*/

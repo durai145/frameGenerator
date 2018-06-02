@@ -214,4 +214,5 @@ USSContainer0   =   us.USSCreateContainer();
  USSTableRow=us.CreateField(USSField,USSTableRow); 
  USSSession0.appendChild(USSTableRow); 
  USSContainer0.appendChild(USSHeader0 ); 
- USSContainer0.appendChild(USSSession0 ); return USSContainer0
+ USSContainer0.appendChild(USSSession0 ); 
+ return USSContainer0
