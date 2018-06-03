@@ -1,6 +1,7 @@
-define(["exports", "Mapper"], function (exports, Mapper) {
+define(["exports", "mapper", "toaster"], function (exports, Mapper, toaster) {
     console.log("Frame Generator index.js")
     exports.CreateField = function (frameObj) {
+      //  toaster.pop('success','this', "test");
         console.log(Mapper.mapper[frameObj.HtmlType]);
         return Mapper.mapper[frameObj.HtmlType].createField(frameObj);
     }
